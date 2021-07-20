@@ -10,8 +10,9 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   </head>
   <body>
+     
   <div class="container-fluid bg-warning" style="min-height: 100vh;">
-  <div class="container-fluid" >
+    <div class="container-fluid" >
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <a class="navbar-brand" href="#">Hospital Regional</a>
             <button class="navbar-toggler   mr-2 ml-auto collapsed" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -31,9 +32,9 @@
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Cadastrar
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <a class="dropdown-item" href="/redirects/form_index.php">Atendente</a>
-                            <a class="dropdown-item" href="/redirects/form_index.php">Médico</a>
-                            <a class="dropdown-item" href="/redirects/form_index.php">Paciente</a>
+                            <a class="dropdown-item" href="/redirects/cadastra_atendente.php">Atendente</a>
+                            <a class="dropdown-item" href="/redirects/cadastra_medico.php">Médico</a>
+                            <a class="dropdown-item" href="/redirects/cadastra_paciente.php">Paciente</a>
                         </div>
                     </li>
                    
@@ -52,50 +53,48 @@
                 
             </div>
             <button class="btn btn-sm btn-outline-secondary p-2 float-right" type="button">Cadastrar</button>
-            </nav>
-      </div>
-
-     <div class="container">
-      <div class="mt-5 row w-100">
+        </nav>
+    </div>
+    
+    <div class="container">
+        <div class="mt-5 row w-100">
             <div class="m-3 display-4">
-              Tabela
+                Tabela
             </div>
-          <div class="d-flex w-100 justify-content-center align-content-center">
-          
-          <table class="table table-bordered table-hover">
-                <thead>
-                    <tr>
-                        <th scope="col">#</th>
-                        <th scope="col">Nome</th>
-                        <th scope="col">CPF</th>
-                        <th scope="col">Médico</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <th scope="row">1</th>
-                        <td>Mark</td>
-                        <td>Otto</td>
-                        <td>@mdo</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">2</th>
-                        <td>Jacob</td>
-                        <td>Thornton</td>
-                        <td>@fat</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">3</th>
-                        <td>Larry</td>
-                        <td>the Bird</td>
-                        <td>@twitter</td>
-                    </tr>
-                </tbody>
-            </table>
-          </div>
-      
-      </div>
-      </div>
+            <div class="d-flex w-100 justify-content-center align-content-center">
+            
+                <table class="table table-bordered table-hover">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Nome</th>
+                            <th scope="col">CPF</th>
+                            <th scope="col">Médico</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Jacob</td>
+                            <td>Thornton</td>
+                            <td>@fat</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>Larry</td>
+                            <td>the Bird</td>
+                            <td>@twitter</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
     </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

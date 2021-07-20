@@ -31,9 +31,9 @@
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Cadastrar
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="#">Atendente</a>
-                        <a class="dropdown-item" href="#">Médico</a>
-                        <a class="dropdown-item" href="#">Paciente</a>
+                            <a class="dropdown-item" href="cadastra_atendente.php">Atendente</a>
+                            <a class="dropdown-item" href="#">Médico</a>
+                            <a class="dropdown-item" href="cadastra_paciente.php">Paciente</a>
                         </div>
                     </li>
                    
@@ -56,7 +56,7 @@
             <div class="row justify-content-center">
                 <div class="col-8 p-4">
                     <h3 class="mb-5">
-                        Cadastro Atendente
+                        Cadastro Médico
                     </h3>
                     <form>
                         <div class="form-row">
