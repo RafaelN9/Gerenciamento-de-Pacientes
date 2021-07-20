@@ -69,16 +69,28 @@
                             <input type="password" class="form-control" id="inputPassword4" placeholder="fulano123">
                             </div>
                         </div>
-                        <div class="form-group">
-                            <div class="row">
-                                <div class="col-md-8">
-                                    <label for="inputName">Nome</label>
-                                    <input type="text" class="form-control" id="inputName" placeholder="Fulano da Silva">
-                                </div>
-                                <div class="col-md-4">
-                                    <label for="inputCPF">CPF</label>
-                                    <input type="text" class="form-control" id="inputCPF" placeholder="111.111.111-11">
-                                </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-8">
+                                <label for="inputName">Nome</label>
+                                <input type="text" class="form-control" id="inputName" placeholder="Fulano da Silva">
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label for="inputCPF">CPF</label>
+                                <input type="text" class="form-control" id="inputCPF" placeholder="111.111.111-11">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-4">
+                                <label for="inputCRM">CRM</label>
+                                <input type="text" class="form-control" id="inputCRM" placeholder="111.111.111-11">
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label for="inputEsp">Especialização</label>
+                                <input type="text" class="form-control" id="inputEsp" placeholder="111.111.111-11">
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label for="inputBirthDate">Data de Nascimento</label>
+                                <input type="date" class="form-control" name="inputBirthDate"placeholder="dd/mm/yyyy"  min="1900-01-01">
                             </div>
                         </div>
                         <div class="form-row">
@@ -109,12 +121,6 @@
                             </div>
                         </div>
                         
-                        <div class="form-row justify-content-center">
-                            <div class="form-group col-md-4">
-                                <label for="inputBirthDate">Data de Nascimento</label>
-                                <input type="date" class="form-control" name="inputBirthDate"placeholder="dd/mm/yyyy"  min="1900-01-01">
-                            </div>
-                        </div>
 
                         <div class="form-group">
                             <div class="form-check">

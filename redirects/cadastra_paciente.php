@@ -60,16 +60,6 @@
                     </h3>
                     <form>
                         <div class="form-row">
-                            <div class="form-group col-md-6">
-                                <label for="inputEmail4">E-mail</label>
-                                <input type="email" class="form-control" id="inputEmail4" placeholder="fulano@gmail.com">
-                            </div>
-                            <div class="form-group col-md-6">
-                                <label for="inputPassword4">Senha</label>
-                                <input type="password" class="form-control" id="inputPassword4" placeholder="fulano123">
-                            </div>
-                        </div>
-                        <div class="form-row">
                             <div class="form-group col-md-8">
                                 <label for="inputName">Nome</label>
                                 <input type="text" class="form-control" id="inputName" placeholder="Fulano da Silva">
@@ -79,6 +69,25 @@
                                 <input type="text" class="form-control" id="inputCPF" placeholder="111.111.111-11">
                             </div>
                         </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-4">
+                                <label for="inputRG">RG</label>
+                                <input type="text" class="form-control" id="inputRG" placeholder="111.111.111-11">
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label for="inputPDS">Plano de Saúde</label>
+                                <select id="inputPDS" class="form-control">
+                                    <option selected>Escolha...</option>
+                                    <option>...</option>
+                                </select>
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label for="inputBirthDate">Data de Nascimento</label>
+                                <input type="date" class="form-control" name="inputBirthDate"placeholder="dd/mm/yyyy"  min="1900-01-01">
+                            </div>
+                        </div>
+                        
+
                         <div class="form-row">
                             <div class="form-group col-md-10">
                                 <label for="inputAddress">Rua</label>
@@ -107,12 +116,7 @@
                             </div>
                         </div>
                         
-                        <div class="form-row justify-content-center">
-                            <div class="form-group col-md-4">
-                                <label for="inputBirthDate">Data de Nascimento</label>
-                                <input type="date" class="form-control" name="inputBirthDate"placeholder="dd/mm/yyyy"  min="1900-01-01">
-                            </div>
-                        </div>
+                        
 
                         <div class="form-group">
                             <div class="form-check">

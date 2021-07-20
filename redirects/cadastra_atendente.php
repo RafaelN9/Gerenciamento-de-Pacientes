@@ -10,45 +10,45 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   </head>
   <body>
-  <div class="container-fluid" style="min-height: 100vh;">
-  <div class="container-fluid" >
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="#">Hospital Regional</a>
-            <button class="navbar-toggler   mr-2 ml-auto collapsed" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="../index_atendente.php">Atendimentos</a>
-                    </li>
+    <div class="container-fluid" style="min-height: 100vh;">
+        <div class="container-fluid" >
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" href="#">Hospital Regional</a>
+                <button class="navbar-toggler   mr-2 ml-auto collapsed" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index_atendente.php">Atendimentos</a>
+                        </li>
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Adicionar Atendimento</a>
-                    </li>
-                    <li class="nav-item dropdown active">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Cadastrar
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="#">Atendente</a>
-                        <a class="dropdown-item" href="cadastra_medico.php">Médico</a>
-                        <a class="dropdown-item" href="cadastra_paciente.php">Paciente</a>
-                        </div>
-                    </li>
-                   
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Atendentes</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Médicos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Pacientes</a>
-                    </li>
-                </ul>
-            </div>
-            <button class="btn btn-sm btn-outline-secondary p-2 float-right" type="button">Cadastrar</button>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Adicionar Atendimento</a>
+                        </li>
+                        <li class="nav-item dropdown active">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Cadastrar
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="#">Atendente</a>
+                            <a class="dropdown-item" href="cadastra_medico.php">Médico</a>
+                            <a class="dropdown-item" href="cadastra_paciente.php">Paciente</a>
+                            </div>
+                        </li>
+                    
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Atendentes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Médicos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Pacientes</a>
+                        </li>
+                    </ul>
+                </div>
+                <button class="btn btn-sm btn-outline-secondary p-2 float-right" type="button">Cadastrar</button>
             </nav>
         </div>
 
@@ -69,16 +69,14 @@
                             <input type="password" class="form-control" id="inputPassword4" placeholder="fulano123">
                             </div>
                         </div>
-                        <div class="form-group">
-                            <div class="row">
-                                <div class="col-md-8">
-                                    <label for="inputName">Nome</label>
-                                    <input type="text" class="form-control" id="inputName" placeholder="Fulano da Silva">
-                                </div>
-                                <div class="col-md-4">
-                                    <label for="inputCPF">CPF</label>
-                                    <input type="text" class="form-control" id="inputCPF" placeholder="111.111.111-11">
-                                </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-8">
+                                <label for="inputName">Nome</label>
+                                <input type="text" class="form-control" id="inputName" placeholder="Fulano da Silva">
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label for="inputCPF">CPF</label>
+                                <input type="text" class="form-control" id="inputCPF" placeholder="111.111.111-11">
                             </div>
                         </div>
                         <div class="form-row">
@@ -129,7 +127,7 @@
                 </div>
             </div>
         </div>
-                
+            
     </div>
 
     <!-- Optional JavaScript -->
