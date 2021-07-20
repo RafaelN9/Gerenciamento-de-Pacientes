@@ -41,20 +41,20 @@
       </div>
 
      <div class="container">
-      <div class="mt-5 row w-100">
-      <div class="m-3 display-4">
-              Paciente: João Vitor Couto Oliveira
+        <div class="mt-5 row justify-content-center w-100">
+            <h3 class="m-4">
+                João Vitor Couto Oliveira
+            </h3>
+            <div class="d-flex justify-content-center w-100 align-content-center">
+        
+                <div class="btn-group-vertical border w-50 p-4 rounded">
+                    <button type="button" class="btn btn-primary mb-2">Solicitar exame</button>
+                    <button type="button" class="btn btn-primary mb-2">Resultado exame</button>
+                    <button type="button" class="btn btn-primary mb-2">Diagnóstico</button>
+                    <button type="button" class="btn btn-primary mb-2">Receita</button>
+                    <button type="button" class="btn btn-danger">Finalizar</button>
+                </div>
             </div>
-      <div class="d-flex w-100 justify-content-center align-content-center">
-      
-        <div class="btn-group-vertical border w-50 p-3 rounded">
-        <button type="button" class="btn btn-primary mb-2">Solicitar exame</button>
-        <button type="button" class="btn btn-primary mb-2">Resultado exame</button>
-        <button type="button" class="btn btn-primary mb-2">Diagnóstico</button>
-        <button type="button" class="btn btn-primary mb-2">Receita</button>
-        <button type="button" class="btn btn-danger">Finalizar</button>
-        </div>
-    </div>
       </div>
       </div>
     </div>
