@@ -7,7 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="script.js" type="text/javascript"></script>
   </head>
+  <style>
+        tbody td{
+            vertical-align: middle !important;
+        }
+    </style>
   <body>
   <div class="container-fluid " style="min-height: 100vh;">
   <div class="container-fluid" >
@@ -55,13 +61,13 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <th scope="row" class="align-middle">1</th>
-                        <td class="align-middle">Mark</td>
-                        <td class="align-middle">Otto</td>
-                        <td class="align-middle">@mdo</td>
-                        <td class="align-middle">@mdo</td>
-                        <td class="align-middle">dor abdominaldor abdominaldor abdominaldor abdominaldor abdominaldor abdominaldor abdominaldor abdominaldor abdominaldor abdominaldor abdominaldor abdominaldor abdominal</td>
-                        <td class="table-danger align-middle">@mdo</td>
+                        <th scope="row"><a href="atender.php">1</a></th>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                        <td>@mdo</td>
+                        <td>dor abdominaldor abdominaldor abdominaldor abdominaldor abdominaldor abdominaldor abdominaldor abdominaldor abdominaldor abdominaldor abdominaldor abdominaldor abdominal</td>
+                        <td>@mdo</td>
                     </tr>
                     <tr>
                         <th scope="row">2</th>
