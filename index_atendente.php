@@ -14,9 +14,10 @@
   <div class="container-fluid" >
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <a class="navbar-brand" href="#">Hospital Regional</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler   mr-2 ml-auto collapsed" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
+            
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item active">
@@ -46,8 +47,11 @@
                         <a class="nav-link" href="#">Pacientes</a>
                     </li>
                     
+                    
                 </ul>
+                
             </div>
+            <button class="btn btn-sm btn-outline-secondary p-2 float-right" type="button">Cadastrar</button>
             </nav>
       </div>
 

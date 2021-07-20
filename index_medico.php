@@ -44,7 +44,7 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#">Pacientes</a>
                     </li>
-                    
+                    <button class="btn btn-sm btn-outline-secondary" type="button">Smaller button</button>
                 </ul>
             </div>
             </nav>
