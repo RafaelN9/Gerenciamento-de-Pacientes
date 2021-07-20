@@ -5,6 +5,11 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <style>
+        tbody td{
+            vertical-align: middle !important;
+        }
+    </style>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   </head>
@@ -55,13 +60,13 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <th scope="row" class="align-middle">1</th>
-                        <td class="align-middle">Mark</td>
-                        <td class="align-middle">Otto</td>
-                        <td class="align-middle">@mdo</td>
-                        <td class="align-middle">@mdo</td>
-                        <td class="align-middle">dor abdominaldor abdominaldor abdominaldor abdominaldor abdominaldor abdominaldor abdominaldor abdominaldor abdominaldor abdominaldor abdominaldor abdominaldor abdominal</td>
-                        <td class="table-danger align-middle">@mdo</td>
+                        <th scope="row">1</th>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                        <td>@mdo</td>
+                        <td>dor abdominaldor abdominaldor abdominaldor abdominaldor abdominaldor abdominaldor abdominaldor abdominaldor abdominaldor abdominaldor abdominaldor abdominaldor abdominal</td>
+                        <td class="table-danger">@mdo</td>
                     </tr>
                     <tr>
                         <th scope="row">2</th>

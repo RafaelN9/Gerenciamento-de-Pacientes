@@ -31,9 +31,9 @@
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Cadastrar
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="#">Atendente</a>
-                        <a class="dropdown-item" href="#">Médico</a>
-                        <a class="dropdown-item" href="#">Paciente</a>
+                            <a class="dropdown-item" href="/redirects/form_index.php">Atendente</a>
+                            <a class="dropdown-item" href="/redirects/form_index.php">Médico</a>
+                            <a class="dropdown-item" href="/redirects/form_index.php">Paciente</a>
                         </div>
                     </li>
                    
