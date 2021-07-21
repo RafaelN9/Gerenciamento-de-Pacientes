@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>Title</title>
+    <title>Cadastro Atendente</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -10,45 +10,45 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   </head>
   <body>
-  <div class="container-fluid" style="min-height: 100vh;">
-  <div class="container-fluid" >
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="#">Hospital Regional</a>
-            <button class="navbar-toggler   mr-2 ml-auto collapsed" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="../index_atendente.php">Atendimentos</a>
-                    </li>
+    <div class="container-fluid" style="min-height: 100vh;">
+        <div class="container-fluid" >
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" href="#">Hospital Regional</a>
+                <button class="navbar-toggler   mr-2 ml-auto collapsed" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index_atendente.php">Atendimentos</a>
+                        </li>
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Adicionar Atendimento</a>
-                    </li>
-                    <li class="nav-item dropdown active">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Cadastrar
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <a class="dropdown-item" href="cadastra_atendente.php">Atendente</a>
-                            <a class="dropdown-item" href="#">Médico</a>
+                        <li class="nav-item">
+                            <a class="nav-link" href="adicionar_atendimento.php">Adicionar Atendimento</a>
+                        </li>
+                        <li class="nav-item dropdown active">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Cadastrar
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="#">Atendente</a>
+                            <a class="dropdown-item" href="cadastra_medico.php">Médico</a>
                             <a class="dropdown-item" href="cadastra_paciente.php">Paciente</a>
-                        </div>
-                    </li>
-                   
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Atendentes</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Médicos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Pacientes</a>
-                    </li>
-                </ul>
-            </div>
-            <button class="btn btn-sm btn-outline-secondary p-2 float-right" type="button">Cadastrar</button>
+                            </div>
+                        </li>
+                    
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Atendentes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Médicos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Pacientes</a>
+                        </li>
+                    </ul>
+                </div>
+                <button class="btn btn-sm btn-outline-secondary p-2 float-right" type="button">Cadastrar</button>
             </nav>
         </div>
 
@@ -56,7 +56,7 @@
             <div class="row justify-content-center">
                 <div class="col-8 p-4">
                     <h3 class="mb-5">
-                        Cadastro Médico
+                        Cadastro Atendente
                     </h3>
                     <form>
                         <div class="form-row">
@@ -77,20 +77,6 @@
                             <div class="form-group col-md-4">
                                 <label for="inputCPF">CPF</label>
                                 <input type="text" class="form-control" id="inputCPF" placeholder="111.111.111-11">
-                            </div>
-                        </div>
-                        <div class="form-row">
-                            <div class="form-group col-md-4">
-                                <label for="inputCRM">CRM</label>
-                                <input type="text" class="form-control" id="inputCRM" placeholder="111.111.111-11">
-                            </div>
-                            <div class="form-group col-md-4">
-                                <label for="inputEsp">Especialização</label>
-                                <input type="text" class="form-control" id="inputEsp" placeholder="111.111.111-11">
-                            </div>
-                            <div class="form-group col-md-4">
-                                <label for="inputBirthDate">Data de Nascimento</label>
-                                <input type="date" class="form-control" name="inputBirthDate"placeholder="dd/mm/yyyy"  min="1900-01-01">
                             </div>
                         </div>
                         <div class="form-row">
@@ -121,6 +107,12 @@
                             </div>
                         </div>
                         
+                        <div class="form-row justify-content-center">
+                            <div class="form-group col-md-4">
+                                <label for="inputBirthDate">Data de Nascimento</label>
+                                <input type="date" class="form-control" name="inputBirthDate"placeholder="dd/mm/yyyy"  min="1900-01-01">
+                            </div>
+                        </div>
 
                         <div class="form-group">
                             <div class="form-check">
@@ -135,7 +127,7 @@
                 </div>
             </div>
         </div>
-                
+            
     </div>
 
     <!-- Optional JavaScript -->
