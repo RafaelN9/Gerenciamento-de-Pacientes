@@ -13,40 +13,90 @@
 
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/css/bootstrap-select.min.css">
-
+    <style>
+        tbody td {
+            vertical-align: middle !important;
+        }
+    </style>
 </head>
-<style>
-    tbody td {
-        vertical-align: middle !important;
-    }
-</style>
 
 <body>
 
-    <!-- Modal -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <!-- Modal Solicita Exame -->
+    <div class="modal fade" id="modalSolicitaExame" tabindex="-1" role="dialog" aria-labelledby="modalSolicitaExameLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Solicitar Exames</h5>
+                    <h5 class="modal-title" id="modalSolicitaExameLabel">Solicitar Exames</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
                 <form action="" method="POST">
-                <div class="modal-body">
-                    <select class="selectpicker form-control" id="solicita_exame" multiple data-live-search="true" >
-                        <option value="1">Raio-x</option>
-                        <option value="2">Ultrasson</option>
-                        <option value="3">Endoscopia</option>
-                    </select>
-                    <label for="local">Local</label>
-                    <input type="text" id="local" class="input-group">
+                    <div class="modal-body">
+                        <label for="solicita_exame">Exame</label>
+                        <select class="selectpicker form-control" id="solicita_exame" multiple data-live-search="true">
+                            <option value="1">Raio-x</option>
+                            <option value="2">Ultrasson</option>
+                            <option value="3">Endoscopia</option>
+                        </select>
+                        <label for="local">Local</label>
+                        <input type="text" id="local" class="input-group">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" id="cancelar" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                        <input type="submit" value="Solicitar" class="btn btn-primary"></input>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Diagnostico -->
+    <div class="modal fade" id="modalDiagnostico" tabindex="-1" role="dialog" aria-labelledby="modalDiagnosticoLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalDiagnosticoLabel">Diagnóstico</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
                 </div>
-                <div class="modal-footer">
-                    <button type="button" id="cancelar" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
-                    <input type="submit" value="Solicitar" class="btn btn-primary"></input>
+                <form action="" method="POST">
+                    <div class="modal-body">
+                        <textarea class="form-control" id="diagnostico" placeholder="" rows="3"></textarea>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" id="cancelar" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                        <input type="submit" value="Confirmar" class="btn btn-primary"></input>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Receita -->
+    <div class="modal fade" id="modalReceita" tabindex="-1" role="dialog" aria-labelledby="modalReceitaLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalReceitaLabel">Receita</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
                 </div>
+                <form action="" method="POST">
+                    <div class="modal-body" > 
+                        <div id="receitas">
+                        
+                        </div> 
+                        <div class="d-flex justify-content-end m-2">
+                            <button type="button" onclick="addConteudo()" class="btn btn-success rounded-circle">+</button></div>
+                        </div>
+                    <div class="modal-footer">
+                        <button type="button" id="cancelarReceita" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                        <input type="submit" value="Confirmar" class="btn btn-primary"></input>
+                    </div>
                 </form>
             </div>
         </div>
@@ -87,11 +137,11 @@
                 <div class="d-flex justify-content-center w-100 align-content-center">
 
                     <div class="btn-group-vertical border w-50 p-4 rounded">
-                        <button type="button" class="btn btn-primary mb-2" data-toggle="modal" data-target="#exampleModal">Solicitar exame</button>
+                        <button type="button" class="btn btn-primary mb-2" data-toggle="modal" data-target="#modalSolicitaExame">Solicitar exame</button>
                         <button type="button" class="btn btn-primary mb-2">Resultado exame</button>
-                        <button type="button" class="btn btn-primary mb-2">Diagnóstico</button>
-                        <button type="button" class="btn btn-primary mb-2">Receita</button>
-                        <button type="button" class="btn btn-danger"  onclick="location.href='index_medico.php'">Finalizar</button>
+                        <button type="button" class="btn btn-primary mb-2" data-toggle="modal" data-target="#modalDiagnostico">Diagnóstico</button>
+                        <button type="button" class="btn btn-primary mb-2" data-toggle="modal" data-target="#modalReceita">Receita</button>
+                        <button type="button" class="btn btn-danger" onclick="location.href='index_medico.php'">Finalizar</button>
                     </div>
                 </div>
             </div>
@@ -108,4 +158,5 @@
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/js/bootstrap-select.min.js"></script>
 <script src="script.js" type="text/javascript"></script>
+
 </html>
