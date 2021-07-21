@@ -12,7 +12,6 @@
     </style>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <script src="script.js" type="text/javascript"></script>
   </head>
   <style>
         tbody td{
@@ -58,8 +57,8 @@
                         <th scope="col">#</th>
                         <th scope="col">Nome</th>
                         <th scope="col">CPF</th>
-                        <th scope="col">Temperatura</th>
-                        <th>Pressão</th>
+                        <th scope="col">Temperatura °C</th>
+                        <th>Pressão mmHg</th>
                         <th>Sintomas</th>
                         <th>Urgência</th>
                     </tr>
@@ -68,11 +67,11 @@
                     <tr>
                         <th scope="row"><a href="atender.php">1</a></th>
                         <td>Mark</td>
-                        <td>Otto</td>
-                        <td>@mdo</td>
-                        <td>@mdo</td>
+                        <td>111.111.111-11</td>
+                        <td>36,5</td>
+                        <td>12 por 8</td>
                         <td>dor abdominaldor abdominaldor abdominaldor abdominaldor abdominaldor abdominaldor abdominaldor abdominaldor abdominaldor abdominaldor abdominaldor abdominaldor abdominal</td>
-                        <td>@mdo</td>
+                        <td>Urgente</td>
                     </tr>
                     <tr>
                         <th scope="row">2</th>
