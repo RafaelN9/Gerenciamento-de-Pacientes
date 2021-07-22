@@ -1,19 +1,23 @@
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
     <title>Tabela Plantão</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <style>
-        tbody td{
+        tbody td {
             vertical-align: middle !important;
         }
     </style>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  </head>
-  <body>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/css/bootstrap-select.min.css">
+</head>
+
+<body>
     <div class="container-fluid" style="min-height: 100vh;">
         <div class="container-fluid">
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -29,10 +33,10 @@
                         <li class="nav-item">
                             <a class="nav-link" href="exibir_exames.php">Exames</a>
                         </li>
-                    
+
                         <li class="nav-item active">
                             <a class="nav-link" href="#">Plantão</a>
-                        </li>                     
+                        </li>
                     </ul>
                 </div>
             </nav>
@@ -42,48 +46,76 @@
                 <form action="">
                     <div class="form-row">
                         <div class="form-group col-md-2 ml-3">
-                            <label for="filtroQuando" class="col-form-label-sm mb-0">Sei la</label>
-                            <select id="filtroQuando" class="form-control">
-                                <option selected>Escolha...</option>
-                                <option>Passado</option>
-                                <option>Atual</option>
-                                <option>Futuro</option>
+                            <label for="tempoPlantao">Plantão</label>
+                            <select class="selectpicker form-control" id="tempoPlantao" multiple data-actions-box="true">
+                                <option value="1">Finalizado</option>
+                                <option value="2">Em andamento</option>
+                                <option value="3">Futuro</option>
                             </select>
                         </div>
                         <div class="form-group col-md-4 ml-3">
-                            <label for="filtroDataE" class="col-form-label-sm mb-0">Nome do Paciente</label>
-                            <input type="text" class="form-control" id="inputName" placeholder="Fulano da Silva">
+                            <label for="medico" class="col-form-label-sm mb-0">Nome do Médico</label>
+                            <input type="text" class="form-control" id="inputMedico" placeholder="Médico">
                         </div>
                         <div class="form-group col-md-2 ml-3">
                             <label for="filtroDataE" class="col-form-label-sm mb-0">Data de Entrada</label>
-                            <input type="date" class="form-control p-1" name="filtroDataE"  min="1990-01-01">
+                            <input type="date" class="form-control p-1" name="filtroDataE" min="1990-01-01">
                         </div>
                         <div class="form-group col-md-2 ml-3">
                             <label for="filtroDataS" class="col-form-label-sm mb-0">Data de Saída</label>
-                            <input type="date" class="form-control p-1" name="filtroDataS"  min="1990-01-01">
+                            <input type="date" class="form-control p-1" name="filtroDataS" min="1990-01-01">
                         </div>
                     </div>
                 </form>
-                
+
             </div>
         </div>
 
-        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal fade" id="addPlantao" tabindex="-1" role="dialog" aria-labelledby="addPlantaoLabel" aria-hidden="true">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    ...
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
-                </div>
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="addPlantaoLabel">Adicionar plantão</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <form action="" method="POST">
+                        <div class="modal-body">
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <label for="crmPlantao" class="input-group-text">CRM</label>
+                                </div>
+                                <input type="text" id="crmPlantao" class="form-control">
+                            </div>
+
+                            <div class="d-flex justify-content-around">
+                                <div class="form-group">
+                                    <label for="dataEntrada" class="col-form-label-sm mb-0">Data de Entrada</label>
+                                    <input type="date" id="dataEntrada" class="form-control p-1" name="dataEntrada" min="1990-01-01">
+                                </div>
+                                <div class="form-group">
+                                    <label for="horaEntrada" class="col-form-label-sm mb-0">Hora de Entrada</label>
+                                    <input type="time" class="form-control p-1" id="horaEntrada" name="horaEntrada">
+                                </div>
+                            </div>
+
+                            <div class="d-flex justify-content-around">
+                                <div class="form-group">
+                                    <label for="dataSaida" class="col-form-label-sm mb-0">Data de Saída</label>
+                                    <input type="date" class="form-control p-1" id="dataSaida" name="dataSaida" min="1990-01-01">
+                                </div>
+                                <div class="form-group">
+                                    <label for="horaSaida" class="col-form-label-sm mb-0">Hora de Saida</label>
+                                    <input type="time" class="form-control p-1" name="horaSaida" id="horaSaida">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" id="cancelarPlantao" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                            <input type="submit" value="Adicionar" class="btn btn-primary"></input>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
@@ -94,48 +126,36 @@
                     <table class="table table-bordered table-hover">
                         <thead>
                             <tr>
-                                <th scope="col">#</th>
+                                <th scope="col">CRM</th>
                                 <th scope="col">Nome</th>
-                                <th scope="col">CPF</th>
-                                <th scope="col">Temperatura °C</th>
-                                <th>Pressão mmHg</th>
-                                <th>Sintomas</th>
-                                <th>Urgência</th>
+                                <th scope="col">Data/Hora Entrada</th>
+                                <th scope="col">Data/Hora Saída</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <th scope="row"><a href="atender.php">1</a></th>
+                                <th scope="row">1</th>
                                 <td>Mark</td>
-                                <td>111.111.111-11</td>
-                                <td>36,5</td>
-                                <td>12 por 8</td>
-                                <td>dor abdominaldor abdominaldor abdominaldor abdominaldor abdominaldor abdominaldor abdominaldor abdominaldor abdominaldor abdominaldor abdominaldor abdominaldor abdominal</td>
-                                <td>Urgente</td>
+                                <td>22/07/2020 15:00</td>
+                                <td>22/07/2020 22:00</td>
                             </tr>
                             <tr>
                                 <th scope="row">2</th>
                                 <td>Jacob</td>
-                                <td>Thornton</td>
-                                <td>@fat</td>
-                                <td>@mdo</td>
-                                <td>@mdo</td>
-                                <td class="bg-danger">@mdo</td>
+                                <td>22/07/2020 15:00</td>
+                                <td>22/07/2020 22:00</td>
                             </tr>
                             <tr>
                                 <th scope="row">3</th>
                                 <td>Larry</td>
-                                <td>the Bird</td>
-                                <td>@twitter</td>
-                                <td>@mdo</td>
-                                <td>@mdo</td>
-                                <td class="bg-danger">@mdo</td>
+                                <td>22/07/2020 15:00</td>
+                                <td>22/07/2020 22:00</td>
                             </tr>
                         </tbody>
                     </table>
-                    <button class="btn btn-secondary float-right" data-toggle="modal" data-target="#exampleModal">
-                        Adicionar
-                    </button>  
+                    <button class="btn btn-secondary float-right" data-toggle="modal" data-target="#addPlantao">
+                        Adicionar Plantão
+                    </button>
                 </div>
             </div>
         </div>
@@ -145,5 +165,11 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  </body>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/js/bootstrap-select.min.js"></script>
+    <script src="script.js" type="text/javascript"></script>
+
+    <script src="script_redirects.js" type="text/javascript"></script>
+</body>
+
 </html>
