@@ -31,6 +31,7 @@
                             <a class="nav-link" href="../medico/redirects/exibir_exames.php">Exames</a>
                         </li>
                     
+
                         <li class="nav-item">
                             <a class="nav-link" href="../medico/redirects/exibir_plantao.php">Plantão</a>
                         </li>                   
