@@ -31,20 +31,20 @@
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Cadastrar
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <a class="dropdown-item" href="#">Atendente</a>
-                            <a class="dropdown-item" href="cadastra_medico.php">Médico</a>
-                            <a class="dropdown-item" href="cadastra_paciente.php">Paciente</a>
+                                <a class="dropdown-item" href="#">Atendente</a>
+                                <a class="dropdown-item" href="cadastra_medico.php">Médico</a>
+                                <a class="dropdown-item" href="cadastra_paciente.php">Paciente</a>
                             </div>
                         </li>
                     
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Atendentes</a>
+                            <a class="nav-link" href="exibir_atendentes.php">Atendentes</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Médicos</a>
+                            <a class="nav-link" href="exibir_medicos.php">Médicos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Pacientes</a>
+                            <a class="nav-link" href="exibir_pacientes.php">Pacientes</a>
                         </li>
                     </ul>
                 </div>

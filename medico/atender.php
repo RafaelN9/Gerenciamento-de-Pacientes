@@ -113,17 +113,17 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
-                        <li class="nav-item active">
+                        <li class="nav-item">
                             <a class="nav-link" href="index_medico.php">Atendimentos</a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Exames</a>
+                            <a class="nav-link" href="../medico/redirects/exibir_exames.php">Exames</a>
                         </li>
-
+                    
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Plantão</a>
-                        </li>
+                            <a class="nav-link" href="../medico/redirects/exibir_plantao.php">Plantão</a>
+                        </li>  
                     </ul>
                 </div>
             </nav>

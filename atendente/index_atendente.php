@@ -39,15 +39,14 @@
                         </li>
                     
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Atendentes</a>
+                            <a class="nav-link" href="../atendente/redirects/exibir_atendentes.php">Atendentes</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Médicos</a>
+                            <a class="nav-link" href="../atendente/redirects/exibir_medicos.php">Médicos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Pacientes</a>
+                            <a class="nav-link" href="../atendente/redirects/exibir_pacientes.php">Pacientes</a>
                         </li>
-                        
                         
                     </ul>
                     

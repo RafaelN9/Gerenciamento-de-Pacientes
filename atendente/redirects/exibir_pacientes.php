@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>Tabela Plantão</title>
+    <title>Tabela Pacientes</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -15,52 +15,55 @@
   </head>
   <body>
     <div class="container-fluid" style="min-height: 100vh;">
-        <div class="container-fluid">
+    <div class="container-fluid" >
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
                 <a class="navbar-brand" href="#">Hospital Regional</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler   mr-2 ml-auto collapsed" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
+                
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link" href="../index_medico.php">Atendimentos</a>
+                            <a class="nav-link" href="../index_atendente.php">Atendimentos</a>
                         </li>
+
                         <li class="nav-item">
-                            <a class="nav-link" href="exibir_exames.php">Exames</a>
+                            <a class="nav-link" href="adicionar_atendimento.php">Adicionar Atendimento</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Cadastrar
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="cadastra_atendente.php">Atendente</a>
+                                <a class="dropdown-item" href="cadastra_medico.php">Médico</a>
+                                <a class="dropdown-item" href="cadastra_paciente.php">Paciente</a>
+                            </div>
                         </li>
                     
+                        <li class="nav-item">
+                            <a class="nav-link" href="exibir_atendentes.php">Atendentes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="exibir_medicos.php">Médicos</a>
+                        </li>
                         <li class="nav-item active">
-                            <a class="nav-link" href="#">Plantão</a>
-                        </li>                     
+                            <a class="nav-link" href="#">Pacientes</a>
+                        </li>
+                        
                     </ul>
+                    
                 </div>
+                <button class="btn btn-sm btn-outline-secondary p-2 float-right" type="button">Cadastrar</button>
             </nav>
         </div>
         <div class="m-3 d-flex justify-content-between align-content-center p-3 w-100">
             <div class="container-fluid">
                 <form action="">
-                    <div class="form-row">
-                        <div class="form-group col-md-2 ml-3">
-                            <label for="filtroQuando" class="col-form-label-sm mb-0">Sei la</label>
-                            <select id="filtroQuando" class="form-control">
-                                <option selected>Escolha...</option>
-                                <option>Passado</option>
-                                <option>Atual</option>
-                                <option>Futuro</option>
-                            </select>
-                        </div>
-                        <div class="form-group col-md-4 ml-3">
+                    <div class="form-row justify-content-center">
+                        <div class="form-group col-md-8 col-sm-12 col-lg-4">
                             <label for="filtroDataE" class="col-form-label-sm mb-0">Nome do Paciente</label>
                             <input type="text" class="form-control" id="inputName" placeholder="Fulano da Silva">
-                        </div>
-                        <div class="form-group col-md-2 ml-3">
-                            <label for="filtroDataE" class="col-form-label-sm mb-0">Data de Entrada</label>
-                            <input type="date" class="form-control p-1" name="filtroDataE"  min="1990-01-01">
-                        </div>
-                        <div class="form-group col-md-2 ml-3">
-                            <label for="filtroDataS" class="col-form-label-sm mb-0">Data de Saída</label>
-                            <input type="date" class="form-control p-1" name="filtroDataS"  min="1990-01-01">
                         </div>
                     </div>
                 </form>

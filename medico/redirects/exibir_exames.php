@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>Tabela Plantão</title>
+    <title>Tabela Exames</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -26,13 +26,14 @@
                         <li class="nav-item">
                             <a class="nav-link" href="../index_medico.php">Atendimentos</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="exibir_exames.php">Exames</a>
+
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Exames</a>
                         </li>
                     
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#">Plantão</a>
-                        </li>                     
+                        <li class="nav-item">
+                            <a class="nav-link" href="exibir_plantao.php">Plantão</a>
+                        </li>                   
                     </ul>
                 </div>
             </nav>
@@ -40,27 +41,10 @@
         <div class="m-3 d-flex justify-content-between align-content-center p-3 w-100">
             <div class="container-fluid">
                 <form action="">
-                    <div class="form-row">
-                        <div class="form-group col-md-2 ml-3">
-                            <label for="filtroQuando" class="col-form-label-sm mb-0">Sei la</label>
-                            <select id="filtroQuando" class="form-control">
-                                <option selected>Escolha...</option>
-                                <option>Passado</option>
-                                <option>Atual</option>
-                                <option>Futuro</option>
-                            </select>
-                        </div>
-                        <div class="form-group col-md-4 ml-3">
+                    <div class="form-row justify-content-center">
+                        <div class="form-group col-md-8 col-sm-12 col-lg-4">
                             <label for="filtroDataE" class="col-form-label-sm mb-0">Nome do Paciente</label>
                             <input type="text" class="form-control" id="inputName" placeholder="Fulano da Silva">
-                        </div>
-                        <div class="form-group col-md-2 ml-3">
-                            <label for="filtroDataE" class="col-form-label-sm mb-0">Data de Entrada</label>
-                            <input type="date" class="form-control p-1" name="filtroDataE"  min="1990-01-01">
-                        </div>
-                        <div class="form-group col-md-2 ml-3">
-                            <label for="filtroDataS" class="col-form-label-sm mb-0">Data de Saída</label>
-                            <input type="date" class="form-control p-1" name="filtroDataS"  min="1990-01-01">
                         </div>
                     </div>
                 </form>
