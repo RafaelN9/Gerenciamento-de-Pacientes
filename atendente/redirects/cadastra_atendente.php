@@ -31,7 +31,6 @@
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Cadastrar
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <a class="dropdown-item" href="#">Atendente</a>
                                 <a class="dropdown-item" href="cadastra_medico.php">Médico</a>
                                 <a class="dropdown-item" href="cadastra_paciente.php">Paciente</a>
                             </div>
@@ -48,7 +47,6 @@
                         </li>
                     </ul>
                 </div>
-                <button class="btn btn-sm btn-outline-secondary p-2 float-right" type="button">Cadastrar</button>
             </nav>
         </div>
 

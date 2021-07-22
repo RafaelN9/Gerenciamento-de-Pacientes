@@ -31,7 +31,6 @@
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Cadastrar
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <a class="dropdown-item" href="cadastra_atendente.php">Atendente</a>
                                 <a class="dropdown-item" href="cadastra_medico.php">Médico</a>
                                 <a class="dropdown-item" href="cadastra_paciente.php">Paciente</a>
                             </div>
@@ -47,11 +46,10 @@
                             <a class="nav-link" href="exibir_pacientes.php">Pacientes</a>
                         </li>
                         
-                        
                     </ul>
                     
                 </div>
-                <button class="btn btn-sm btn-outline-secondary p-2 float-right" type="button">Cadastrar</button>
+                <a class="btn btn-sm btn-outline-secondary p-2 float-right" href="cadastra_atendente.php" type="button">Cadastrar</a>
             </nav>
         </div>
         
@@ -62,7 +60,6 @@
                         Adicionar Atendimento
                     </h3>
                     <form>
-                        
                         
                         <div class="form-row">
                             <div class="form-group col-md-4">

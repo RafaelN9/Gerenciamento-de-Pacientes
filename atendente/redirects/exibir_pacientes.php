@@ -15,7 +15,7 @@
   </head>
   <body>
     <div class="container-fluid" style="min-height: 100vh;">
-    <div class="container-fluid" >
+        <div class="container-fluid" >
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
                 <a class="navbar-brand" href="#">Hospital Regional</a>
                 <button class="navbar-toggler   mr-2 ml-auto collapsed" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -35,7 +35,6 @@
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Cadastrar
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <a class="dropdown-item" href="cadastra_atendente.php">Atendente</a>
                                 <a class="dropdown-item" href="cadastra_medico.php">Médico</a>
                                 <a class="dropdown-item" href="cadastra_paciente.php">Paciente</a>
                             </div>
@@ -54,40 +53,28 @@
                     </ul>
                     
                 </div>
-                <button class="btn btn-sm btn-outline-secondary p-2 float-right" type="button">Cadastrar</button>
+                <a class="btn btn-sm btn-outline-secondary p-2 float-right" href="cadastra_atendente.php" type="button">Cadastrar</a>
             </nav>
         </div>
         <div class="m-3 d-flex justify-content-between align-content-center p-3 w-100">
             <div class="container-fluid">
                 <form action="">
                     <div class="form-row justify-content-center">
-                        <div class="form-group col-md-8 col-sm-12 col-lg-4">
-                            <label for="filtroDataE" class="col-form-label-sm mb-0">Nome do Paciente</label>
-                            <input type="text" class="form-control" id="inputName" placeholder="Fulano da Silva">
+                        <div class="form-group col-md-4 col-sm-12">
+                            <label for="filtroRGPac" class="col-form-label-sm mb-0">RG do Paciente</label>
+                            <input type="text" class="form-control" id="filtroRGPac" placeholder="11.111.111-X">
+                        </div>
+                        <div class="form-group col-md-4 col-sm-12">
+                            <label for="filtroCPFPac" class="col-form-label-sm mb-0">CPF do Paciente</label>
+                            <input type="text" class="form-control" id="filtroCPFPac" placeholder="111.111.111-11">
+                        </div>
+                        <div class="form-group col-md-4 col-sm-12">
+                            <label for="filtroNomePac" class="col-form-label-sm mb-0">Nome do Paciente</label>
+                            <input type="text" class="form-control" id="filtroNomePac" placeholder="Fulano da Silva">
                         </div>
                     </div>
                 </form>
                 
-            </div>
-        </div>
-
-        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    ...
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
-                </div>
-                </div>
             </div>
         </div>
 
@@ -100,45 +87,42 @@
                                 <th scope="col">#</th>
                                 <th scope="col">Nome</th>
                                 <th scope="col">CPF</th>
-                                <th scope="col">Temperatura °C</th>
-                                <th>Pressão mmHg</th>
-                                <th>Sintomas</th>
-                                <th>Urgência</th>
+                                <th scope="col">RG</th>
+                                <th scope="col">Plano de Saúde</th>
+                                <th scope="col">Data de Nascimento</th>
+                                <th scope="col">Endereço</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <th scope="row"><a href="atender.php">1</a></th>
-                                <td>Mark</td>
+                                <th scope="row">1</th>
+                                <td>José</td>
                                 <td>111.111.111-11</td>
-                                <td>36,5</td>
-                                <td>12 por 8</td>
-                                <td>dor abdominaldor abdominaldor abdominaldor abdominaldor abdominaldor abdominaldor abdominaldor abdominaldor abdominaldor abdominaldor abdominaldor abdominaldor abdominal</td>
-                                <td>Urgente</td>
+                                <td>11.111.111-X</td>
+                                <td>Iamspe</td>
+                                <td>10/12/1998</td>
+                                <td>Rua das Laranjeiras, 1234</td>
                             </tr>
                             <tr>
                                 <th scope="row">2</th>
-                                <td>Jacob</td>
-                                <td>Thornton</td>
-                                <td>@fat</td>
-                                <td>@mdo</td>
-                                <td>@mdo</td>
-                                <td class="bg-danger">@mdo</td>
+                                <td>Marco</td>
+                                <td>111.111.111-11</td>
+                                <td>11.111.111-X</td>
+                                <td>Unimed</td>
+                                <td>10/12/1998</td>
+                                <td>Rua das Laranjeiras, 1234</td>
                             </tr>
                             <tr>
                                 <th scope="row">3</th>
-                                <td>Larry</td>
-                                <td>the Bird</td>
-                                <td>@twitter</td>
-                                <td>@mdo</td>
-                                <td>@mdo</td>
-                                <td class="bg-danger">@mdo</td>
+                                <td>Ronaldo</td>
+                                <td>111.111.111-11</td>
+                                <td>11.111.111-X</td>
+                                <td>Yamada</td>
+                                <td>10/12/1998</td>
+                                <td>Rua das Laranjeiras, 1234</td>
                             </tr>
                         </tbody>
                     </table>
-                    <button class="btn btn-secondary float-right" data-toggle="modal" data-target="#exampleModal">
-                        Adicionar
-                    </button>  
                 </div>
             </div>
         </div>
